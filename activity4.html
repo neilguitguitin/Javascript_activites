@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JavaScript function that accepts an array as parameter and  returns the elements of an array of numbers that are less than 18.</title>
+</head>
+<body>
+  <p id="text"></p>
+</body>
+<script>
+
+let returnSmallest = (arr, num) => arr.filter(n => n <= num);
+ 
+var result = returnSmallest( [69, 12, 1, 8, , 1, 61], 18)
+document.getElementById("text").innerHTML=result.join()
+</script>
+</html>
