@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Returns a passed string with letters in alphabetical order</title>
+</head>
+<body>
+
+<p id="text"> </p>
+
+<script>
+
+    const str = 'the quick brown fox';
+
+const arr = str.split(" ");
+
+for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+
+}
+
+const str2 = arr.join(" ");
+console.log(str2);
+document.getElementById("text").innerHTML=str2
+
+</script>
+</html>
